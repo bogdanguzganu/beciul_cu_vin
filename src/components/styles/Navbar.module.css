@@ -1,6 +1,8 @@
 .backgroundImage{  
+    background-image: url(../../../public/vie.jpg);
+    height: 100vh;
+    background-repeat: no-repeat;
     background-size: cover;
-    height: 721px;    
 }
 
 .crama{

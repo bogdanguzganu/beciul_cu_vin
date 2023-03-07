@@ -14,7 +14,7 @@ const [active,  setActive] =useState(false)
 const navigate = useNavigate()
 
     return (
-        <div>
+        
             
        
         
@@ -38,11 +38,10 @@ const navigate = useNavigate()
             </div>
 
             </div>
-            <div className="box-content">
-                {/* <img className='crama'src={crama} />  */}
-           </div>
             
-        </div> 
+            
+     
+        
         
          
        

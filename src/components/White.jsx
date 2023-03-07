@@ -25,13 +25,13 @@ useEffect(() => {
         
       <div className={styles.backgroundImage}>   
                       
-        <NavBar />
+        <NavBar/>
 
-        <Row md={2} xs={1} lg={3} className="g-3">
+        <div className="grid-container g-3" md={2} xs={1} lg={3}>
             {data.map((item,key) => (
-          <Col key={key}>{item.id}</Col>
+          <div key={key}>{item.id}</div>
           ))}
-        </Row>
+        </div>
 
       </div>
       
