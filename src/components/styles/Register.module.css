@@ -1,0 +1,75 @@
+.backgroundImage{
+  background-image: url(../../../public/crama.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 721px;
+ 
+}
+.h2{
+  color: white;
+}
+
+
+.box {
+    
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  top: 150px;bottom: 15vh;
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 75px;
+  margin-left: auto; 
+  margin-right: auto;
+  text-align: justify;
+  max-width: 300px;
+  align-items: center;
+}
+
+.authform{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    
+    border-radius: 10px;
+  
+  }
+  .registerform{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    border-radius: 10px;
+    border: 1rem;
+  }
+
+  .label{
+    text-align: left;
+    padding: 0.25rem 0;
+    border-radius: 10px;
+    border: 1rem;
+    color: white;
+  }
+  
+  .input{
+    margin: 0.5rem 0;
+    padding: 1rem;
+    border: none;
+    border-radius: 10px;
+
+  }
+  
+
+  .btn{
+    color: white;
+    text-decoration: underline;
+    border: none;
+    background-color: rgb(53, 167, 232);
+    padding: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    border-radius: 10px;
+  }

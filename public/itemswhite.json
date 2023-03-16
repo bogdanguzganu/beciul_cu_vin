@@ -1,0 +1,62 @@
+[
+    {
+    "id": 1,
+    "name": "Chardonnay de Purcari",
+    "price": 20,
+    "imgUrl": "/img/vin_alb_1.png"
+    },
+    {
+    "id": 2,
+    "name": "Grasa de Cotnari",
+    "price": 21,
+    "imgUrl": "/img/vin_alb_2.png"
+    },
+    {
+    "id": 3,
+    "name": "Sauvignon Blanc",
+    "price": 22,
+    "imgUrl": "/img/vin_alb_3.png"
+    },
+    {
+    "id": 4,
+    "name": "Sauvignon Blanc",
+    "price": 23,
+    "imgUrl": "/img/vin_alb_3.png"
+    },
+    {
+    "id": 5,
+    "name": "Sauvignon Blanc",
+    "price": 24,
+    "imgUrl": "/img/vin_alb_3.png"
+    },
+    {
+    "id": 5,
+    "name": "Sauvignon Blanc",
+    "price": 24,
+    "imgUrl": "/img/vin_alb_3.png"
+    },
+    {
+    "id": 5,
+    "name": "Sauvignon Blanc",
+    "price": 24,
+    "imgUrl": "/img/vin_alb_3.png"
+    },
+    {
+    "id": 5,
+    "name": "Sauvignon Blanc",
+    "price": 24,
+    "imgUrl": "/img/vin_alb_3.png"
+    },
+    {
+    "id": 5,
+    "name": "Sauvignon Blanc",
+    "price": 24,
+    "imgUrl": "/img/vin_alb_3.png"
+    },
+    {
+    "id": 5,
+    "name": "Sauvignon Blanc",
+    "price": 24,
+    "imgUrl": "/img/vin_alb_3.png"
+    }
+]

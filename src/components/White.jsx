@@ -1,44 +1,43 @@
-import React   from "react";
-import styles from './styles/White.module.css';
+import React from "react";
+import styles from "./styles/White.module.css";
 import { useState, useEffect } from "react";
 import NavBar from "./Nav";
-import {Col, Row} from "react-bootstrap";
 
 
-const  WhiteCart = () => {
-const [active, setActive] =useState(false)
-const [data, setData] =useState([])
+const WhiteCart = () => {
+  const [active, setActive] = useState(false);
+  const [data, setData] = useState([]);
 
-async function getData() {
-const result= await fetch('./items.json');
-const res= await result.json()
-setData(res)
-console.log(data)
+  async function getData() {
+    const result = await fetch("./itemswhite.json");
+    const res = await result.json();
+    setData(res);
+    console.log(data);
+  }
+  useEffect(() => {
+    getData();
+  }, []);
 
-}
-useEffect(() => {
-  getData()
-},[])
+  return (
+    <div className={styles.backgroundImage}>
+      <NavBar />
 
-
-    return (
-        
-      <div className={styles.backgroundImage}>   
-                      
-        <NavBar/>
-
-        <div className="grid-container g-3" md={2} xs={1} lg={3}>
-            {data.map((item,key) => (
-          <div key={key}>{item.id}</div>
-          ))}
-        </div>
-
+      <div className={styles.container}>
+        {data.map((item, key) => (
+          <div className={styles.card} key={key} id={item.id}>
+            <div className={styles.cont}>
+              <img src={item.imgUrl} alt="va1" />
+              <h4 className={styles.name} key={key} id={item.name}>
+                <b>{item.name}</b>
+              </h4>
+              <p className={styles.price} key={key} id={item.price}>Pret: {item.price} Ron</p>
+              <p><button>Adauga in cos</button></p>
+            </div>
+          </div>
+        ))}
       </div>
-      
-    
-         
-       
-    )
-}
+    </div>
+  );
+};
 
 export default WhiteCart;
