@@ -1,7 +1,8 @@
-import React from "react";
+import React, { useContext } from "react";
 import styles from "./styles/White.module.css";
 import { useState, useEffect } from "react";
 import NavBar from "./Nav";
+import { globalContext } from "./Context/Context";
 
 
 const WhiteCart = () => {
@@ -12,11 +13,13 @@ const WhiteCart = () => {
     const result = await fetch("./itemswhite.json");
     const res = await result.json();
     setData(res);
-    console.log(data);
+    
   }
   useEffect(() => {
     getData();
   }, []);
+
+  const [cart, setCart] = useContext(globalContext)
 
   return (
     <div className={styles.backgroundImage}>
@@ -31,7 +34,10 @@ const WhiteCart = () => {
                 <b>{item.name}</b>
               </h4>
               <p className={styles.price} key={key} id={item.price}>Pret: {item.price} Ron</p>
-              <p><button>Adauga in cos</button></p>
+              <p><button onClick={()=>{
+                setCart((prevState)=>[...prevState, {'name':item.name, 'price':item.price, 'img':item.imgUrl}])
+              }}>Adauga in cos</button></p>
+             
             </div>
           </div>
         ))}

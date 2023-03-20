@@ -1,7 +1,8 @@
-import React   from "react";
+import React, { useContext }   from "react";
 import styles from './styles/Rose.module.css';
 import { useState, useEffect } from "react";
 import NavBar from "./Nav";
+import { globalContext } from "./Context/Context";
 
 const RoseCart = () => {
   const [active, setActive] = useState(false);
@@ -17,6 +18,8 @@ const RoseCart = () => {
     getData();
   }, []);
 
+  const [cart, setCart] = useContext(globalContext)
+
   return (
     <div className={styles.backgroundImage}>
       <NavBar />
@@ -30,7 +33,9 @@ const RoseCart = () => {
                 <b>{item.name}</b>
               </h4>
               <p className={styles.price} key={key} id={item.price}>Pret: {item.price} Ron</p>
-              <p><button>Adauga in cos</button></p>
+              <p><button onClick={()=>{
+                setCart((prevState)=>[...prevState, {'name':item.name, 'price':item.price, 'img':item.imgUrl}])
+              }}>Adauga in cos</button></p>
             </div>
           </div>
         ))}

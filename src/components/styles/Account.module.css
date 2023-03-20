@@ -1,0 +1,8 @@
+.backgroundImage{
+    background-image: url(../../../public/crama.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 721px;
+    }

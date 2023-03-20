@@ -3,6 +3,10 @@ import styles from './styles/Navbar.module.css'
 import { useState } from "react";
 import { useNavigate, Link } from "react-router-dom";
 import logo from "./assets/img/logo.png";
+import CartIcon from "./assets/img/cart.png"
+import LoginIcon from "./assets/img/login.png"
+import SearchIcon from "./assets/img/search.png"
+
 
 
 
@@ -42,21 +46,17 @@ const NavBar = () => {
                 setActive(!active);
               }}
             >
-              &#x1F50E;
+             <img src={SearchIcon} className={styles.searchicon}/>
             </button>
           </li>
-          
+      
           <li>
-            <Link to={"/login"}>login</Link>
+            <Link to={"/account"}><img src={LoginIcon} className={styles.loginicon}/></Link>
           </li>
           <li>
-            <Link to={"/register"}>register</Link>
-          </li>
-          
-          <li>
-            <a href="#" className="menu-cart-icon">
-              cart
-            </a>
+            <Link to={"/cart"}>
+              <img src={CartIcon} className={styles.carticon}/>
+              </Link>
           </li>
         </ul>
       </div>

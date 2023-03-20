@@ -1,0 +1,47 @@
+.backgroundImage{
+    background-image: url(../../../public/crama.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 721px;
+}
+.container{
+  display: grid ;
+  grid-template-rows: auto;
+  padding-top: 20px;
+  color: white;  
+} 
+.cart{
+  display: flex ;
+  flex-direction: row;
+  
+  background-color: rgb(187, 185, 185,0.2);
+}
+.img{
+  width: 30px;
+  height: auto;
+}
+.name{
+  
+  width: 180px;
+  height: 30px;
+  padding: 25px 0; 
+}
+.price{
+  width: 50px;
+  height: 30px;
+  padding: 25px 0;
+}
+.add{
+  width: 23px;
+  height: 23px;
+  margin-top: 20px;
+  margin-left: 20px;
+  
+}
+.remove{
+  width: 23px;
+  height: 23px;
+  margin-top: 20px;
+}
