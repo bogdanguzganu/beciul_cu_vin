@@ -2,7 +2,7 @@ import React   from "react";
 import styles from './styles/Navbar.module.css'
 import { useState } from "react";
 import { useNavigate, Link } from "react-router-dom";
-import logo from "./assets/img/logo.png";
+import logo from "./assets/img/logoa.png";
 import CartIcon from "./assets/img/cart.png"
 import LoginIcon from "./assets/img/login.png"
 import SearchIcon from "./assets/img/search.png"
@@ -25,13 +25,13 @@ const NavBar = () => {
             <Link to={"/"}>Beciul cu vin</Link>
           </li>
           <li>
-            <Link to={"/white"}>vin alb</Link>
+            <Link to={"/white"}>alb</Link>
           </li>
           <li>
-            <Link to={"/rose"}>vin roze</Link>
+            <Link to={"/rose"}>roze</Link>
           </li>
           <li>
-            <Link to={"/red"}>vin rosu</Link>
+            <Link to={"/red"}>rosu</Link>
           </li>
         </ul>
         <ul>

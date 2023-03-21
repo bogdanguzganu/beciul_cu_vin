@@ -29,7 +29,7 @@ li{
     float: left;    
     display: block;
     /* color: white; */
-    padding: 8px 10px;
+    padding: 8px 8px;
     text-decoration: none;
 }
 
@@ -75,9 +75,9 @@ li a:hover{
     width: 100%;
 }
 .logo{
-    mix-blend-mode: color-burn;
+    /* mix-blend-mode: color-burn; */
     aspect-ratio: auto;
-    height: 50px;
+    height: 45px;
     width: auto;
 }
 

@@ -21,3 +21,16 @@
   border-radius: 5px;
   width: 200px;
 }
+.price{
+  margin: 0;
+  }
+.btn:hover {
+  background-color:  rgb(131, 24, 70);
+   color: white;
+  }
+
+.btn{
+  background-color: rgb(126, 231, 126);
+  border: none;
+  border-radius: 5px;
+}

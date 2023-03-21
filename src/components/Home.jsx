@@ -14,26 +14,32 @@ const Home = () => {
       <h1 className={styles.h1}>Va invitam sa alegeti din rezerva noastra vinul preferat!</h1>
       <div className={styles.cont}>
       <div className={styles.box}>
+      <a href="http://localhost:3000/white">
         <h2 className={styles.h2}>Vinuri Albe</h2>
         <img src={alb} alt="crama" className={styles.img} />
+        </a>  
         <p>
         Vinurile alb sunt recomandate cand serviti peste, fructe de mare, sushi, carne de pui, paste cu sos alb, salate,
          deserturi sau branzeturi precum Feta, Brie sau Camembert.
         </p>
-        
+              
         </div>
+        
         <div className={styles.box}>
+        <a href="http://localhost:3000/rose">
         <h2 className={styles.h2}>Vinuri Roze</h2>
-        <img src={rose} alt="crama" className={styles.img} />
+        <img src={rose} alt="crama" className={styles.img} /></a>
         <p>
         Vinurile roze sunt recomandate cand serviti salate si mancaruri usoare, aperitive, branza de capra, deserturi variate,
          preparate cu rata sau curcan, poate merge inclusiv cu preparate cu carne rosie si cu diverse tipuri de branzeturi.
         </p>
         
         </div>
+               
         <div className={styles.box}>
+        <a href="http://localhost:3000/red">
         <h2 className={styles.h2}>Vinuri Rosii</h2>
-        <img src={rosu} alt="crama" className={styles.img} />
+        <img src={rosu} alt="crama" className={styles.img} /></a>
         <p>
         Vinurile rosii sunt recomandate cand serviti carne rosie (vita, porc, vanat), unele deserturi, in special cele cu ciocolata, 
         tiramisu, paste cu sos rosu, pizza, lasagna, gulas sau branzeturi precum Emmental, Parmezan, Gouda sau Muenster.

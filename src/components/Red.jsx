@@ -34,7 +34,7 @@ const RedCart = () => {
                 <b>{item.name}</b>
               </h4>
               <p className={styles.price} key={key} id={item.price}>Pret: {item.price} Ron</p>
-              <p><button onClick={()=>{
+              <p><button className={styles.btn} onClick={()=>{
                 setCart((prevState)=>[...prevState, {'name':item.name, 'price':item.price, 'img':item.imgUrl}])
               }}>Adauga in cos</button></p>
             </div>
