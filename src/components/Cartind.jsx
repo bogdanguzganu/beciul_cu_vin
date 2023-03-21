@@ -10,6 +10,12 @@ const Cart = () => {
   // const location = useLocation();
   const { orders } = useContext(CartContext);
   const [order] = orders;
+  const [total, setTotal] = useState();
+  useEffect(() => {
+    setTotal(
+      order.reduce((acc, curr) => acc + Number(curr.price) * curr.qty, 0)
+    );
+  }, [order]);
   function reducer(state, action) {
     switch (action.type) {
       case 'increment': {
@@ -17,7 +23,8 @@ const Cart = () => {
           ...state,
           newCart: state.cart.filter((c) =>
             c.id === action.id ? (c.quantity++) : c.quantity
-          )
+          ),
+          newCart2: state.cart.map(e => e.price*e.quantity)
         }
       }
       case 'decrement': {
@@ -25,7 +32,8 @@ const Cart = () => {
           ...state,
           newCart: state.cart.filter((c) =>
             c.id === action.id ? (c.quantity--) : c.quantity
-          )
+          ),
+          newCart2: state.cart.map(e => e.price*e.quantity)
         }
       }
       default:
@@ -36,8 +44,6 @@ const Cart = () => {
   const [state, dispatch] = useReducer(reducer, {
     cart: order
   });
-  // console.log(state)
-  console.log("state + ", state)
   return (
     <div>
       <Navbar />
@@ -58,20 +64,16 @@ const Cart = () => {
               <button onClick={() => {
                 dispatch({
                   type: 'decrement',
-                  id: e.id,
-                  image: e.image,
-                  name: e.name,
-                  price: e.price,
-                  quantity: e.quantity
+                  ...e,
                 })
               }}>- {e.quantity}
               </button>
-              <span>TotalPrice {e.price *e.quantity}</span>
             </div>
           )
         })}
+        <span>TotalPrice {state.newCart2?.reduce((a,b) => a+b, 0)}</span>
       </ul>
     </div>
   );
 };
-export default Cart;
+export default Cart; (edited) 

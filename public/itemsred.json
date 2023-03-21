@@ -1,60 +1,60 @@
 [
     {
-        "id": 1,
+        "id": 11,
         "name": "Cabernet",
         "price": 20,
         "imgUrl": "/img/rosu_cabernet.png"
     },
     {
-        "id": 2,
+        "id": 12,
         "name": "Merlot",
         "price": 21,
         "imgUrl": "/img/rosu_merlot.png"
     },
     {
-        "id": 3,
+        "id": 13,
         "name": "Ovas",
         "price": 22,
         "imgUrl": "/img/rosu_ovas.png"
     },
     {
-        "id": 4,
+        "id": 14,
         "name": "Rara Neagra",
         "price": 23,
         "imgUrl": "/img/rosu_purcari.png"
     },
     {
-        "id": 5,
+        "id": 15,
         "name": "Rara Neagra",
         "price": 23,
         "imgUrl": "/img/rosu_purcari.png"
     },
     {
-        "id": 6,
+        "id": 16,
         "name": "Rara Neagra",
         "price": 23,
         "imgUrl": "/img/rosu_purcari.png"
     },
     {
-        "id": 7,
+        "id": 17,
         "name": "Rara Neagra",
         "price": 23,
         "imgUrl": "/img/rosu_purcari.png"
     },
     {
-        "id": 8,
+        "id": 18,
         "name": "Rara Neagra",
         "price": 23,
         "imgUrl": "/img/rosu_purcari.png"
     },
     {
-        "id": 9,
+        "id": 19,
         "name": "Rara Neagra",
         "price": 23,
         "imgUrl": "/img/rosu_purcari.png"
     },
     {
-        "id": 10,
+        "id": 20,
         "name": "Rara Neagra",
         "price": 23,
         "imgUrl": "/img/rosu_purcari.png"

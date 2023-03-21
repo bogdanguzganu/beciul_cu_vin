@@ -54,9 +54,9 @@ const NavBar = () => {
             <Link to={"/account"}><img src={LoginIcon} className={styles.loginicon}/></Link>
           </li>
           <li>
-            <Link to={"/cart"}>
-              <img src={CartIcon} className={styles.carticon}/>
-              </Link>
+            
+              <img src={CartIcon} className={styles.carticon} onClick={() => navigate('/cart')}/>
+              
           </li>
         </ul>
       </div>

@@ -1,49 +1,85 @@
-import React, { useState, useContext } from "react";
+import React, { useReducer, useContext } from "react";
 import NavBar from "./Nav";
 import styles from "./styles/Cart.module.css";
 import { globalContext } from "./Context/Context";
 
+
 const Cart = () => {
   const [data] = useContext(globalContext);
-  const [count, setCount] = useState(1)
- 
-  const incrementCount = () => {
-    setCount(count + 1)
+  console.log(data)
+
+  function reducer(state, action) {
+    switch (action.type) {
+      case 'increase':{
+        return{
+          ...state,
+          newCart: state.cart.filter((c)  =>
+          c.id === action.id ? (c.quantity++) : c.quantity
+          ),newCart2: state.cart.map(e => e.price*e.quantity)
+
+        }
+      }
+      case 'decrease':{
+        return {
+        ...state,
+        newCart: state.cart.filter((c) =>
+          c.id === action.id ? (c.quantity--) : c.quantity
+        )
+,newCart2: state.cart.map(e => e.price*e.quantity)
+}
+    }
+    default: 
+    return state
+    }
   }
-  const decreseCount = () => {
-    setCount(count - 1)
-  }
+ const[state, dispatch] = useReducer(reducer, {
+  cart: data
+ })
+  
   
   return (
     <div className={styles.backgroundImage}>
       <NavBar />
       <div>
-        <div className={styles.head}>Cart Items</div>
+        
         <div className={styles.container}>
-        {data.length === 0 && <div>No items added</div>}
+        
           <div>
             {data.map((e, i) => {
               return (
-                <div>
-                <ul key={i} className={styles.cart}>
+                <div key={i}>
+                <ul  className={styles.cart}>
                   <li>
-                    <img src={e.img} className={styles.img} alt="img" />
+                    <img src={e.imgUrl} className={styles.img} alt="img" />
                   </li>
-                  <li className={styles.id}>{e.id}</li>
                   <li className={styles.name}>{e.name}</li>
                   <li className={styles.price}>{e.price + " Ron"}</li>
                   
                   <li className={styles.function}>
-                    <button className={styles.add} onClick={incrementCount}>+</button>
-                    <div className={styles.count}>{count}</div>
-                    <button className={styles.remove} onClick={decreseCount}>-</button>
+                    <button className={styles.add} onClick={() => {
+                dispatch({
+                  type: 'increase',
+                  ...e,
+                })
+              }}>+ </button>
+                    <div className={styles.count}>{e.quantity}</div>
+                    <button className={styles.remove} onClick={() => {
+                dispatch({
+                  type: 'decrease',
+                  id: e.id,
+                  image: e.image,
+                  name: e.name,
+                  price: e.price,
+                  quantity: e.quantity
+                })
+              }}>- </button>
                   </li>
-                  <li className={styles.result}>{"Total " + e.price*count + " Ron"}</li>
                 </ul>
                 </div>
               );
             })}
-          
+                            <div className={styles.result}> {state.newCart2?.reduce((a,b) => a+b, 0)}</div>
+
           </div>
         </div>
       </div>

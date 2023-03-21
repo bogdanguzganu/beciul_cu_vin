@@ -1,60 +1,60 @@
 [
     {
-        "id": 1,
+        "id": 21,
         "name": "Avincis",
         "price": 20,
         "imgUrl": "/img/rose_avincis.png"
     },
     {
-        "id": 2,
+        "id": 22,
         "name": "Busuioaca de Bohotin",
         "price": 21,
         "imgUrl": "/img/rose_busuioaca.png"
     },
     {
-        "id": 3,
+        "id": 23,
         "name": "Saac Rose",
         "price": 22,
         "imgUrl": "/img/rose_saac.png"
     },
     {
-        "id": 4,
+        "id": 24,
         "name": "Vinohora Rose",
         "price": 23,
         "imgUrl": "/img/rose_vinohora.png"
     },
     {
-        "id": 5,
+        "id": 25,
         "name": "Vinohora Rose",
         "price": 23,
         "imgUrl": "/img/rose_vinohora.png"
     },
     {
-        "id": 6,
+        "id": 26,
         "name": "Vinohora Rose",
         "price": 23,
         "imgUrl": "/img/rose_vinohora.png"
     },
     {
-        "id": 7,
+        "id": 27,
         "name": "Vinohora Rose",
         "price": 23,
         "imgUrl": "/img/rose_vinohora.png"
     },
     {
-        "id": 8,
+        "id": 28,
         "name": "Vinohora Rose",
         "price": 23,
         "imgUrl": "/img/rose_vinohora.png"
     },
     {
-        "id": 9,
+        "id": 29,
         "name": "Vinohora Rose",
         "price": 23,
         "imgUrl": "/img/rose_vinohora.png"
     },
     {
-        "id": 10,
+        "id": 30,
         "name": "Vinohora Rose",
         "price": 23,
         "imgUrl": "/img/rose_vinohora.png"

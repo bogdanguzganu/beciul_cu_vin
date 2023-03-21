@@ -5,7 +5,7 @@ export const globalContext = createContext()
 
 const Context = ({children}) => {
 const [data, setData] = useState([])
-
+console.log("state", data)
     return(
 <globalContext.Provider value={[data, setData]}>
     {children}

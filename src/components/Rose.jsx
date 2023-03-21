@@ -29,12 +29,12 @@ const RoseCart = () => {
           <div className={styles.card} key={key} id={item.id}>
             <div className={styles.cont}>
               <img src={item.imgUrl} alt="va1" />
-              <h4 className={styles.name} key={key} id={item.name}>
+              <h4 className={styles.name} id={item.name}>
                 <b>{item.name}</b>
               </h4>
-              <p className={styles.price} key={key} id={item.price}>Pret: {item.price} Ron</p>
+              <p className={styles.price}  id={item.price}>Pret: {item.price} Ron</p>
               <p><button className={styles.btn} onClick={()=>{
-                setCart((prevState)=>[...prevState, {'name':item.name, 'price':item.price, 'img':item.imgUrl}])
+                setCart((prevState)=>[...prevState, {...item,'quantity':1}])
               }}>Adauga in cos</button></p>
             </div>
           </div>
