@@ -1,6 +1,6 @@
-import React, { useContext } from "react";
+import React, { useContext,useState, useEffect } from "react";
 import styles from "./styles/White.module.css";
-import { useState, useEffect } from "react";
+
 import NavBar from "./Nav";
 import { globalContext } from "./Context/Context";
 
